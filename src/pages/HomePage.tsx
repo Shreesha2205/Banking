@@ -23,11 +23,6 @@ const HomePage: React.FC = () => {
       description: 'Stay updated with the latest interest rates',
     },
     {
-      icon: <Calendar className="h-6 w-6" />,
-      title: 'Holiday Calendar',
-      description: 'Never miss important banking holidays',
-    },
-    {
       icon: <Shield className="h-6 w-6" />,
       title: 'Secure Platform',
       description: 'Your financial data is always protected',
@@ -100,7 +95,7 @@ const HomePage: React.FC = () => {
               Experience banking tools designed with simplicity and power in mind
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
